@@ -1,0 +1,32 @@
+{{yield}}
+
+{{#paper-grid-list
+  md-cols-sm="1" md-cols-md="2"
+  md-cols-gt-md="6" md-row-height-gt-sm="1:1"
+  md-row-height-sm="2:1" md-gutter="0"
+  md-gutter-gt-sm="8px"
+}}
+
+  {{!-- {{#paper-grid-tile md-colspan-sm="1" class="fill-primary"}} --}}
+  {{!-- {{/paper-grid-tile}} --}}
+  {{#paper-grid-tile md-colspan-sm="1" class="fill-primary"}}
+  {{/paper-grid-tile}}    
+
+  {{#paper-grid-tile md-colspan-sm="1" class="fill-primary"}}
+    {{#paper-item noink=true class="md-3-line" param=item action="startMic"}}
+      <div class="font-primary">
+        {{paper-icon 'mic' class="fast-animation"}}
+      </div>
+    {{/paper-item}}
+
+    {{#if applySmall}}
+      <div class="speech-bubble-cont">
+        <div class="font-secondary nudge-left">
+          {{paper-icon 'chat'}}
+        </div>
+      </div>
+    {{/if}}
+
+  {{/paper-grid-tile}}
+
+{{/paper-grid-list}}

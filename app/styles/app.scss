@@ -1,0 +1,99 @@
+@import 'ember-paper';
+
+// vars
+
+$primary-bg:                  #69D2E7;
+$primary-highlight:           #A7DBD8;
+$primary-accent:              #E0E4CC;
+$primary-alert:               #FF5148;
+$secondary-bg:                #F38630;
+$secondary-highlight:         #FA6900;
+
+$icon-large:                  20em;
+$icon-med:                    10em;
+$icon-small:                  5em;
+$icon-xsmall:                 2em;
+
+$pad-med:                     20px;
+
+// globals
+.pad-top {
+  padding-top: $pad-med;
+}
+.nudge-left {
+  margin-left: -30px
+}
+// ***********
+
+// components
+.progress-bar {
+  margin: 0 auto;
+  width: 0;
+}
+.progress-bar-half {
+  width: 50%;
+  position: absolute;
+}
+.speech-bubble-cont {
+  position: absolute;
+}
+.main-container {
+  position: absolute;
+  background-color: $primary-bg;
+  height: 100%;
+  width: 100%;
+  .md-content {
+    background-color: $primary-bg;
+  }
+}
+.fill-primary {
+  background-color: $primary-bg;
+}
+.font-primary {
+  .material-icons { 
+    color: $primary-highlight;
+    font-size: $icon-large;
+  }
+}
+.font-secondary {
+  .material-icons { 
+    color: $primary-highlight;
+    font-size: $icon-small;
+  }
+}
+
+// tranistion and animation classes 
+.apply-small {
+  .font-primary {
+    .material-icons {
+      font-size: $icon-small;
+    }
+  }
+}
+.font-color {
+  .font-primary {
+    .material-icons {
+      color: $primary-alert;
+    }
+  }
+}
+.fade-in {
+  .font-secondary {
+    .material-icons {
+      opacity: 1;
+    }
+  }
+}
+
+.fast-animation {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+.slow-animation {
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+}

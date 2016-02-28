@@ -2,16 +2,16 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'slack-talk-ember',
+    modulePrefix: 'slack-talk-client',
     environment: environment,
     baseURL: '/',
     locationType: 'hash',
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self'",
-      'font-src': "'self'",
+      'font-src': "'self' fonts.gstatic.com",
       'connect-src': "'self' *",
-      'img-src': "'self'",
+      'img-src': "'self' data:",
       'style-src': "'self' *",
       'media-src': "'self'"
     },
