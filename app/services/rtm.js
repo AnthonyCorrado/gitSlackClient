@@ -16,10 +16,6 @@ export default Ember.Service.extend({
          resolve(person);
         }
       });
-      // resolve(this.get('store').filter('contact', {name: 'false'})
-      //   .then(function(contact) {
-      //     console.log(contact);
-      //   }))
     })
   }
 });

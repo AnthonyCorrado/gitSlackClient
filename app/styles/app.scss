@@ -6,8 +6,12 @@ $primary-bg:                  #6FBFFE;
 $primary-highlight:           #1892DB;
 $primary-accent:              #E0E4CC;
 $primary-alert:               #FF3D00;
-$secondary-bg:                #F52118;
+$secondary-bg:                #926559;
 $secondary-highlight:         #D3B5AD;
+
+$primary-accent-trans:        rgba(224, 228, 204, 0.6);
+
+$shadow-fill-med:             rgba(0, 0, 0, 0.5);
 
 $icon-large:                  20em;
 $icon-med:                    10em;
@@ -16,6 +20,7 @@ $icon-xsmall:                 2em;
 
 $font-size-large:             5em;
 $font-size-med:               3em;
+$font-size-small:             2em;
 
 $pad-med:                     20px;
 
@@ -26,8 +31,21 @@ $pad-med:                     20px;
 .nudge-left {
   margin-left: -30px
 }
+.nudge-up {
+  margin-up: 30px;
+}
 .visibility-full {
   opacity: 1;
+}
+h2.capitalize {
+  text-transform: capitalize;
+}
+
+.shadow-med {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.shadow-small {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
 }
 // ***********
 
@@ -42,6 +60,11 @@ $pad-med:                     20px;
 }
 .speech-bubble-cont {
   position: absolute;
+}
+.rec-active {
+  .material-icons { 
+    color: $primary-alert !important;
+  }
 }
 .main-container {
   position: absolute;
@@ -80,7 +103,42 @@ $pad-med:                     20px;
     background-color: $primary-bg;
   }
 }
+.contact-container {
+  .content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 
+    .avatar-container {
+      width: 110%;
+      border-radius: 50px 0 0 50px;
+      background-color: $secondary-highlight;
+    }
+
+    img {
+      width: 60%;
+      border-radius: 100%;
+      border: 10px solid $primary-accent;
+    }
+
+    .info-container {
+      width: 70%;
+      margin-top: -40px;
+      margin-right: 10%;
+      float: right;
+      background-color: $shadow-fill-med;
+      border: 1px solid $primary-accent-trans;
+      border-radius: 10px;
+
+      .info-text {
+        color: $primary-accent;
+        font-size: $font-size-small;
+        text-align: right;
+        padding-right: $pad-med;
+      }
+    }
+  }
+}
 // tranistion and animation classes 
 .apply-small {
   .font-primary {

@@ -9,8 +9,8 @@
 
   {{#paper-grid-tile md-colspan-sm="1" class="fill-primary"}}
     {{#paper-item noink=true class="md-3-line" param=item action="startMic"}}
-      <div class="font-primary">
-        {{paper-icon 'mic' class="fast-animation"}}
+      <div class="font-primary {{if recActive 'rec-active'}} ">
+        {{paper-icon 'mic' class="fast-animation" }}
       </div>
     {{/paper-item}}
 

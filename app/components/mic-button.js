@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNameBindings: ['applySmall', 'fontColor'],
+
+  classNameBindings: ['applySmall'],
   applySmall: false,
 
   click: function() {
@@ -11,7 +12,6 @@ export default Ember.Component.extend({
   actions: {
     startMic: function() {
       this.set('applySmall', true);
-      this.set('fontColor', true);
     }
   }
 });

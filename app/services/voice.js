@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Service.extend({
 
   startRec: function() {
+    var _this = this;
     return new Ember.RSVP.Promise(function(resolve) {
       function recognizeSpeech() {
         Ember.run.later(function() {
