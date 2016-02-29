@@ -1,7 +1,10 @@
-{{vocal-query message=model.words}}
-{{mic-button action="startSpeechRec"}}
+{{!-- {{vocal-query message=model.words fadeIn=model.isFadeIn}} --}}
+{{model.command}}
+{{#each model.contacts as |contact|}}
+{{contact.name}}
+{{/each}}
+<div class="{{if model.fadeOut 'fade-out'}} visibility-full med-animation">{{mic-button action="startSpeechRec"}}</div>
   {{!-- <div class="progress-bar" style="width: 50%">
     {{paper-progress-linear}}
   </div>
  --}}
-{{blog-post}}
