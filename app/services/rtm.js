@@ -17,5 +17,13 @@ export default Ember.Service.extend({
         }
       });
     })
+  },
+
+  sendMsg(msgContent) {
+    return new Ember.RSVP.Promise((resolve) => {
+      console.log(msgContent);
+      var post = this.get('store').createRecord('message', msgContent);
+      // post.save();
+    })
   }
 });

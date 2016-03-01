@@ -11,7 +11,7 @@ module.exports = function(environment) {
       'script-src': "'self'",
       'font-src': "'self' fonts.gstatic.com",
       'connect-src': "'self' *",
-      'img-src': "'self' data:",
+      'img-src': "'self' data: https://avatars.slack-edge.com",
       'style-src': "'self' *",
       'media-src': "'self'"
     },

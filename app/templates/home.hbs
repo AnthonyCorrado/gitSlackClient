@@ -6,6 +6,10 @@
 <div class="{{if model.fadeOut 'fade-out'}} visibility-full med-animation">
   {{mic-button action="startSpeechRec" recActive=model.recActive}}
 </div>
+{{message-body body=model.messageBody}}
+
+{{model.messageBody}}
+{{model.recipient}}
   {{!-- <div class="progress-bar" style="width: 50%">
     {{paper-progress-linear}}
   </div>
